@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de Filmes</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-200">
+    <div class="container mx-auto mt-10">
+        <h1 class="text-3xl font-bold mb-6">Buscar Informações de Filme</h1>
+        <div class="flex mb-4">
+            <input type="text" id="movieSearch" class="form-input w-full mr-2" placeholder="Digite o nome do filme">
+            <button onclick="searchMovie()" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Buscar</button>
+        </div>
+        <div id="movieDetails"></div>
+    </div>
+
+    <script src="imdb.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
